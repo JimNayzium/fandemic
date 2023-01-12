@@ -251,12 +251,12 @@
     <p>Starting 2024 Rookie Draft and onward: The draft order each year will be a linear draft in the following order:</p>
    
     <ol>
-        <li>1st Least in Max Points For for non-Playoff teams</li>
-        <li>2nd Least in Max Points For for non-Playoff teams</li>
-        <li>3rd Least in Max Points For for non-Playoff teams</li>
-        <li>4th Least in Max Points For for non-Playoff teams</li>
-        <li>1st Least in Max Points For for Playoff teams</li>
-        <li>2nd Least in Max Points For for Playoff teams</li>
+        <li>1st Least in Max Points For (non-Playoff team)</li>
+        <li>2nd Least in Max Points For (non-Playoff team)</li>
+        <li>3rd Least in Max Points For (non-Playoff team)</li>
+        <li>4th Least in Max Points For (non-Playoff team)</li>
+        <li>1st Least in Max Points between the 5th & 6th Seed Playoff Teams</li>
+        <li>2nd Least in Max Points between the 5th & 6th Seed Playoff Teams</li>
         <li>4th Place Finisher</li>
         <li>3rd Place Finisher</li>
         <li>2nd Place Finisher</li>
