@@ -265,7 +265,7 @@
     
     <p>2021 Season and 2022 Rookie Draft: A mistake was made during the inaugural season. Draft order for positions 5-10 were based off playoff season standings while positions 1-4 were based off regular season standings. Draft order was not corrected based on Article 2.1 as 2022 draft pick trades had already been exchanged via trades before the Dynasty Dog Constitution was drafted. Starting the 2022 season Article 2.1 is in full effect.</p>
     
-    <p>2022 Season and 2023 Rookie Draft: Draft order for positions 5-10 were based off playoff season standings while positions 1-4 were based off regular season standings. Starting the 2023 season Article 2.1 is in full effect.</p>
+    <p>2022 Season and 2023 Rookie Draft: Draft order for positions 5-10 were based off playoff season standings while positions 1-4 were based off regular season standings. League voted during 2022 Season to institute new draft order rules starting the 2023 season.</p>
     
     <h3 bind:this={twoTwo}>2.2 Rookie Drafts</h3>
     <p>Rookie drafts will consist of 4 rounds of drafting, with 8 hours alotted for each pick. Players can be moved into the taxi squad until the regular season start of week 1. Once deadline passes, players may no longer be moved into the taxi squad.</p>
