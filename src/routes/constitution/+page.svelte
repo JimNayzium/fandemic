@@ -147,7 +147,7 @@
     
     <h3 class="noUnderscore clickable" on:click={() => goToSection(eight)}>Article 8: Miscellaneous Rules</h3>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(eightOne)}>8.1 User Errors</h4>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(eightTwo)}>7.2 Manager Unavailability</h4>
+        <h4 class="noUnderscore clickable" on:click={() => goToSection(eightTwo)}>8.2 Manager Availability</h4>
     
     <hr />
     
@@ -299,7 +299,7 @@
     <h2 class="sectionHeading" bind:this={seven}>Article 7 League Finances</h2>
     
     <h3 bind:this={sevenOne}>7.1 League Dues</h3>
-    <p>League dues are set at {dues}$. Dues are collected through <a href="https://www.paypal.com/paypalme/CorgiKohmander">Paypal</a>, <a href="https://www.venmo.com/u/CorgiKoh">Venmo</a>[preferred] or Zelle (via my cell#) and collection will be sent out no later than the first of August. All managers must be fully paid up before the start of regular season. In the event that a manager fails to pay before the deadline, a 10% penalty will be addd to their payment and will go towards the payouts at the end of the year.</p>
+    <p>League dues are set at {dues}$. Dues are collected through <a href="https://www.paypal.com/paypalme/CorgiKohmander">Paypal</a>, <a href="https://www.venmo.com/u/CorgiKoh">Venmo</a> [preferred] or Zelle (via my cell#) and collection will be sent out no later than the first of August. All managers must be fully paid up before the start of regular season. In the event that a manager fails to pay before the deadline, a 10% penalty will be addd to their payment and will go towards the payouts at the end of the year.</p>
     
     <h3 bind:this={sevenTwo}>7.2 Payout</h3>
     <p>League payout is structured as follows:</p>
@@ -331,7 +331,7 @@
     <h3 bind:this={eightOne}>8.1 User Errors</h3>
     <p>Managers must contact the commissioner via text or Sleeper DM within 24 hours of any roster drop errors. This will serves as a time stamp for the request. The commissioner will review and process the request. Requests made over 24 hours later will not be honored.</p>
     
-    <h3 bind:this={eightTwo}>8.2 Manager Unavailability</h3>
+    <h3 bind:this={eightTwo}>8.2 Manager Availability</h3>
     <p>Managers must contact the commissioner if they are unable to set their lineup due to unforeseen circumstances including but not limited lack of internet, loss of power, vacation or business travel. It is recommended to assign a co-manager if these events occur often. If specific lineup instructions are not given, the commissioner will set the best available line up based on projected points.</p>
     
 </div>
