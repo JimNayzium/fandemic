@@ -313,6 +313,16 @@
      <h3 bind:this={sevenThree}>7.4 Last Place Punishment</h3>
     <p>The manager who finishes with the worst regular season record is required to pay the fee to upgrade the Dynasty Dog Trophy for the 1st place winner. The current cost is $12 for engraving plus any taxes and shipping(as of 2022 total was $16.34). The link to purchase the engraved name plate can be found <a href="https://www.fantasychamps.com/products/engraved-name-plate-black-gold/">HERE</a>.</p>   
     
+    <p>If two teams finish with the same losing record the tiebreakers will go as followed:</p>
+    
+    <ol>
+        <li>Least Points For</li>
+        <li>Loser of Head 2 Head Record</li>
+        <li>Least Total Points Against</li>
+        <li>Loser of the Coin Flip</li>
+        <li>Loser in a duel to the death</li>
+    </ol>
+    
     <h3 bind:this={sevenFour}>7.4 Raising Dues</h3>
     <p>A majority vote (6/10) is required in order to raise league dues. In the event that a manager is no longer financially comfortable with the buyin, finding a co-manager to split the cost should be explored first before Article 6.2: Replacing Managers is initiated.</p>
 
