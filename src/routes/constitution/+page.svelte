@@ -1,12 +1,13 @@
 <script>
     import { dues } from '$lib/utils/helper';
-    let one, oneOne, oneOneOne, oneTwo, oneTwoOne, oneTwoTwo, oneTwoThree, oneTwoFour, oneTwoFive, oneThree;
+    let one, oneOne, oneOneOne, oneTwo, oneTwoOne, oneTwoTwo, oneTwoThree, oneTwoFour, oneTwoFive, oneTwoSix, oneThree;
     let two, twoOne, twoTwo, twoThree;
     let three, threeOne;
     let four, fourOne, fourTwo;
     let five, fiveOne;
     let six, sixOne, sixTwo, sixThree;
-    let seven, sevenOne, sevenTwo, sevenThree;
+    let seven, sevenOne, sevenTwo, sevenThree, sevenFour;
+    let eight, eightOne, eightTwo;
 
     const goToSection = (section) => {
         const top = section.getBoundingClientRect().top + window.pageYOffset;
@@ -96,7 +97,7 @@
 </style>
 
 <div class="constitution">
-    <h1 class="noUnderscore">LEGENDS LEAGUE CONSTITUTION</h1>
+    <h1 class="noUnderscore">DYNASTY DOGS CONSTITUTION</h1>
     
     <h2 class="noUnderscore">TABLE OF CONTENTS</h2>
     
@@ -109,6 +110,7 @@
             <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoThree)}>1.2.3 Trade Deadline</h5>
             <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoFour)}>1.2.4 Trade Restrictions</h5>
             <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoFive)}>1.2.5 Veto/Trade Process</h5>
+            <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoSix)}>1.2.6 Conditional Trades</h5>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(oneThree)}>1.3 Waiver Wire</h4>
     
     <h3 class="noUnderscore clickable" on:click={() => goToSection(two)}>Section 2: Drafting</h3>
@@ -140,8 +142,12 @@
     
         <h4 class="noUnderscore clickable" on:click={() => goToSection(sevenOne)}>7.1 League Dues</h4>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(sixTwo)}>7.2 Payout</h4>
-        <h4 class="noUnderscore clickable" on:click={() => goToSection(sixThree)}>7.3 Raising Dues</h4>
+        <h4 class="noUnderscore clickable" on:click={() => goToSection(sixThree)}>7.3 Last Place Punishment</h4>
+        <h4 class="noUnderscore clickable" on:click={() => goToSection(sixFour)}>7.4 Raising Dues</h4>
     
+    <h3 class="noUnderscore clickable" on:click={() => goToSection(eight)}>Section 8: Miscellaneous Rules</h3>
+        <h4 class="noUnderscore clickable" on:click={() => goToSection(eightOne)}>8.1 User Errors</h4>
+        <h4 class="noUnderscore clickable" on:click={() => goToSection(eightTwo)}>7.2 Manager Unavailability</h4>
     
     <hr />
     
