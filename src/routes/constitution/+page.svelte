@@ -99,9 +99,9 @@
 <div class="constitution">
     <h1 class="noUnderscore">DYNASTY DOGS CONSTITUTION</h1>
     
-    <h2 class="noUnderscore">TABLE OF CONTENTS</h2>
+    <h2 class="noUnderscore">ARTICLES OF THE CONSTITUTION</h2>
     
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(one)}>Section 1: Roster</h3>
+    <h3 class="noUnderscore clickable" on:click={() => goToSection(one)}>Article 1: Roster</h3>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(oneOne)}>1.1 Positional Breakdown</h4>
             <h5 class="noUnderscore clickable" on:click={() => goToSection(oneOneOne)}>1.1.1 Position Maximums</h5>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(oneTwo)}>1.2 Trading</h4>
@@ -113,45 +113,45 @@
             <h5 class="noUnderscore clickable" on:click={() => goToSection(oneTwoSix)}>1.2.6 Conditional Trades</h5>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(oneThree)}>1.3 Waiver Wire</h4>
     
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(two)}>Section 2: Drafting</h3>
+    <h3 class="noUnderscore clickable" on:click={() => goToSection(two)}>Article 2: Drafting</h3>
     
         <h4 class="noUnderscore clickable" on:click={() => goToSection(twoOne)}>2.1 Draft Order</h4>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(twoTwo)}>2.2 Rookie Drafts</h4>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(twoThree)}>2.3 Draft Day Trades</h4>
     
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(three)}>Section 3: Scoring System</h3>
+    <h3 class="noUnderscore clickable" on:click={() => goToSection(three)}>Article 3: Scoring System</h3>
     
         <h4 class="noUnderscore clickable" on:click={() => goToSection(threeOne)}>3.1 Voting on Scoring System</h4>
     
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(four)}>Section 4: Postseason</h3>
+    <h3 class="noUnderscore clickable" on:click={() => goToSection(four)}>Article 4: Postseason</h3>
     
         <h4 class="noUnderscore clickable" on:click={() => goToSection(fourOne)}>4.1 Playoffs</h4>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(fourTwo)}>4.2 Playoff Tiebreakers</h4>
 
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(five)}>Section 5: Tanking Policy</h3>
+    <h3 class="noUnderscore clickable" on:click={() => goToSection(five)}>Article 5: Tanking Policy</h3>
     
         <h4 class="noUnderscore clickable" on:click={() => goToSection(fiveOne)}>5.1 League Tanking Policy</h4>
 
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(six)}>Section 6: Replacing Managers</h3>
+    <h3 class="noUnderscore clickable" on:click={() => goToSection(six)}>Article 6: Replacing Managers</h3>
     
         <h4 class="noUnderscore clickable" on:click={() => goToSection(sixOne)}>6.1 Removing Managers</h4>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(sixTwo)}>6.2 Replacing Managers</h4>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(sixThree)}>6.3 Replacement Incentive</h4>
 
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(seven)}>Section 7: League Finances</h3>
+    <h3 class="noUnderscore clickable" on:click={() => goToSection(seven)}>Article 7: League Finances</h3>
     
         <h4 class="noUnderscore clickable" on:click={() => goToSection(sevenOne)}>7.1 League Dues</h4>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(sixTwo)}>7.2 Payout</h4>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(sixThree)}>7.3 Last Place Punishment</h4>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(sixFour)}>7.4 Raising Dues</h4>
     
-    <h3 class="noUnderscore clickable" on:click={() => goToSection(eight)}>Section 8: Miscellaneous Rules</h3>
+    <h3 class="noUnderscore clickable" on:click={() => goToSection(eight)}>Article 8: Miscellaneous Rules</h3>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(eightOne)}>8.1 User Errors</h4>
         <h4 class="noUnderscore clickable" on:click={() => goToSection(eightTwo)}>7.2 Manager Unavailability</h4>
     
     <hr />
     
-    <h2 class="sectionHeading" bind:this={one}>Section 1 Roster Breakdown</h2>
+    <h2 class="sectionHeading" bind:this={one}>Article 1 Roster Breakdown</h2>
     
     <h3 class="subSectionHeading" bind:this={oneOne}>1.1 Positional Breakdown</h3>
     
@@ -232,6 +232,10 @@
         <p>A total of 6 veto votes are required to veto a trade. Vetoes are only appropriate in instances of collusion or an egregious mismatch of value (i.e. CMC for a backup WR). Not liking a trade does not warrant a veto.</p>
     </div>
     
+    <h4 bind:this={oneTwoSix}>1.2.6 Conditional Trades</h4>
+    <div class="subBlock">
+        <p>Placeholder for verbiage on conditional trades.</p>
+    </div>
     
     
     <h3 bind:this={oneThree}>1.3 Waiver Wire</h3>
@@ -241,7 +245,7 @@
     <p>FAAB budgets will reset each season after the Championship game.</p>
     
     
-    <h2 class="sectionHeading" bind:this={two}>Section 2 Drafting</h2>
+    <h2 class="sectionHeading" bind:this={two}>Article 2 Drafting</h2>
     
     <h3 bind:this={twoOne}>2.1 Draft Order</h3>
     <p>The draft order each year will be a linear draft in reverse order of the previous year’s regular season standings.</p>
@@ -255,12 +259,12 @@
     <h3 bind:this={twoThree}>2.3 Draft Day Trades</h3>
     <p>If a trade is being made during the draft, one or both parties can alert the commissioner to pause the draft to allow for extra time to negotiate the trade.</p>
     
-    <h2 class="sectionHeading" bind:this={three}>Section 3 Scoring System</h2>
+    <h2 class="sectionHeading" bind:this={three}>Article 3 Scoring System</h2>
 
     <h3 bind:this={threeOne}>3.1 Scoring System</h3>
     <p>The league scoring system breakdown is listed on the Sleeper fantasy app (for the most part, it follows typical .5PPR Scoring but with a 1PPR Scoring for the TEs). The scoring system will never change without a majority league vote (6/10) and cannot change mid-season.</p>
     
-    <h2 class="sectionHeading" bind:this={four}>Section 4 Postseason</h2>
+    <h2 class="sectionHeading" bind:this={four}>Article 4 Postseason</h2>
     
     <h3 bind:this={fourOne}>4.1 Playoffs</h3>
     <p>At the end of the season 6 teams will make the playoffs. The first round of playoffs will commence in week 15. The top 6 teams in the standings, will receive a playoff berth. The 2 teams with the best season record will receive a bye week in the first round of the playoffs. Each playoff matchup will only last one week and the winner will advance. Week 18 will not be used.</p>
@@ -276,12 +280,12 @@
         <li>Survivor in a duel to the death</li>
     </ol>
 
-    <h2 class="sectionHeading" bind:this={five}>Section 5 Tanking Policy</h2>
+    <h2 class="sectionHeading" bind:this={five}>Article 5 Tanking Policy</h2>
     
     <h3 bind:this={fiveOne}>5.1 League Tanking Policy</h3>
     <p>No team may intentionally leave starting roster spots empty or start ineligible players. Ineligible players include players with the following statuses: IR, Suspended, or free agents. Any evidence of intentionally leaving roster spots empty or starting ineligible players in order to improve your draft position may be subject to punishment, including but not limited to the forfeiture of draft selections.</p>
 
-    <h2 class="sectionHeading" bind:this={six}>Section 6 Replacing Managers</h2>
+    <h2 class="sectionHeading" bind:this={six}>Article 6 Replacing Managers</h2>
     
     <h3 bind:this={sixOne}>6.1 Removing Managers</h3>
     <p>Short of continuously failing to set a valid lineup, or confirmed collusion, no manager can be removed against their will. Participation, through the league text chat, trade offers, and the waiver wire, is strongly encouraged but generally not grounds for removal.</p>
@@ -292,7 +296,7 @@
     <h3 bind:this={sixThree}>6.3 Replacement Incentive</h3>
     <p>In the event that a manager chooses to quit the league or is removed by a comissioner, an incoming manager is offered a 50% reduction on their first year buy-in.</p>
 
-    <h2 class="sectionHeading" bind:this={seven}>Section 7 League Finances</h2>
+    <h2 class="sectionHeading" bind:this={seven}>Article 7 League Finances</h2>
     
     <h3 bind:this={sevenOne}>7.1 League Dues</h3>
     <p>League dues are set at {dues}$. Dues are collected through <a href="https://www.paypal.com/paypalme/CorgiKohmander">Paypal</a>, <a href="https://www.venmo.com/u/CorgiKoh">Venmo</a>[preferred] or Zelle (via my cell#) and collection will be sent out no later than the first of August. All managers must be fully paid up before the start of regular season. In the event that a manager fails to pay before the deadline, a 10% penalty will be addd to their payment and will go towards the payouts at the end of the year.</p>
@@ -312,4 +316,12 @@
     <h3 bind:this={sevenFour}>7.4 Raising Dues</h3>
     <p>A majority vote (6/10) is required in order to raise league dues. In the event that a manager is no longer financially comfortable with the buyin, finding a co-manager to split the cost should be explored first before Article 6.2: Replacing Managers is initiated.</p>
 
+     <h2 class="sectionHeading" bind:this={eight}>Article 8 Miscellaneous Rules</h2>
+    
+    <h3 bind:this={eightOne}>8.1 User Errors</h3>
+    <p>Managers must contact the commissioner via text or Sleeper DM within 24 hours of any roster drop errors. This will serves as a time stamp for the request. The commissioner will review and process the request. Requests made over 24 hours later will not be honored.</p>
+    
+    <h3 bind:this={eightTwo}>8.2 Manager Unavailability</h3>
+    <p>Managers must contact the commissioner if they are unable to set their lineup due to unforeseen circumstances including but not limited lack of internet, loss of power, vacation or business travel. It is recommended to assign a co-manager if these events occur often. If specific lineup instructions are not given, the commissioner will set the best available line up based on projected points.</p>
+    
 </div>
