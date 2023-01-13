@@ -236,18 +236,20 @@
     <div class="subBlock">
         <p>Details of conditional trades must be submitted to the commissioner in order to document and track conditions and conditional trade pieces. Draft picks, current season FAAB, and players are allowed assets to be included in conditional trades. Only draft picks up to 1 draft away can be traded when conditions are set. Any conditional picks, players or FAAB must be owned by the trading parties for the entire length of the condition.  Conditional trades cannot be used as a form of bench sharing or player rentals. Articles 1.2.1 and 1.2.2 must be adhered to when doing conditional trades. </p>
         
+              <p>Examples of conditional trades:</p>
+        <ol>
+             <li>During the 2022 season, John trades his 2023 1st round pick for Ferd's CMC. John and Ferd agree if the future 1st round pick is NOT a top 3 pick, Ferd also gets John's 2023 3rd round pick.</li>
+             <li>During the 2023 off-season, Joey trades his 2023 4nd round pick for Sean's Gronkowski.  Joey and Sean agree if Gronk is signed to an NFL the night before the 2023 Rookie draft, the trade is reversed.</li>
+             <li>During the 2022 season, Jonathan trades away Zach Ertz who iss currently on IR to Jerrid for a 2023 3rd round pick. Jonathan and Jerrid agree if Ertz is not back from IR before Week 10 that the 2023 3rd round pick will be upgraded to a 2023 2nd round pick plus Jonathan will give $5 FAAB to Jerrid.</li>
+        </ol>
+        
         <p>These are a few examples of things that cannot be done with conditional pieces:</p>
         <ol>
              <li>Conditional players cannot be dropped or traded away before the agreed conditional cutoff time is met.</li>
              <li>All FAAB cannot be spent if FAAB was the conditional piece.</li>
              <li>Conditional picks cannot be traded away before the agreed conditional cutoff time is met.</li>
         </ol>
-        <p>Examples of conditional trades:</p>
-        <ol>
-             <li>During the 2022 season, John trades his 2023 1st round pick for Ferd's CMC. John and Ferd agree if the future 1st round pick is NOT a top 3 pick, Ferd also gets John's 2023 3rd round pick.</li>
-             <li>During the 2023 off-season, Joey trades his 2023 4nd round pick for Sean's Gronkowski.  Joey and Sean agree if Gronk is signed to an NFL the night before the 2023 Rookie draft, the trade is reversed.</li>
-             <li>During the 2022 season, Jonathan trades away Zach Ertz who iss currently on IR to Jerrid for a 2023 3rd round pick. Jonathan and Jerrid agree if Ertz is not back from IR before Week 10 that the 2023 3rd round pick is upgraded to a 2023 2nd round pick.</li>
-        
+
     </div>
     
     
