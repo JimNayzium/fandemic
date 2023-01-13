@@ -173,7 +173,7 @@
     
     <p>13 Bench</p>
 
-    <p>3 Taxi Squad Spots (Player with 1 or more years of experience in the NFL must be activated from the Taxi Squad)</p>
+    <p>4 Taxi Squad Spots (Player with 1 or more years of experience in the NFL must be activated from the Taxi Squad)</p>
     
     <p>3 IR Spots (Player must be labeled as IR, PUP, or COVID in the Sleeper App)</p>
     
@@ -234,7 +234,8 @@
     
     <h4 bind:this={oneTwoSix}>1.2.6 Conditional Trades</h4>
     <div class="subBlock">
-        <p>Placeholder for verbiage on conditional trades.</p>
+        <p>Conditions for conditional trades must be submitted to the league for ease of record keeping. Draft picks, current season FAAB, and players are allowed assets to be included in conditional trades. Draft picks must follow Article 1.2 meanjng up to 3 draft away can be included in the conditions.  Any conditional picks, players or FAAB will be locked and cannot be dropped, traded, or
+used.  </p>
     </div>
     
     
