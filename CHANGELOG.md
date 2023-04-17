@@ -2,6 +2,38 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.6] - 2023-04-15
+
+### Changed
+
+- Upgraded Vite and SvelteKit due to vulnerability issue
+- Fixed bugs due to Sleeper division bug 
+    - Bug broke roster, records, and awards pages
+
+### Fixed
+
+- Fix standings order issue[(issue #199)](https://github.com/nmelhado/league-page/issues/199)
+    - Turn rosters into a map instead of an array in order to deliver the correct data
+
+## [2.1.5] - 2023-01-14
+
+### Fixed
+
+- Fix standings order issue
+    - Turn rosters into a map instead of an array in order to deliver the correct data
+
+## [2.1.4] - 2023-01-13
+
+### Fixed
+
+- Minor css bug related to transactions on mobile
+
+## [2.1.3] - 2023-01-13
+
+### Changed
+
+- Updated trades to look similar to the new waiver style for better consistency
+
 ## [2.1.2] - 2023-01-10
 
 ### Fixed

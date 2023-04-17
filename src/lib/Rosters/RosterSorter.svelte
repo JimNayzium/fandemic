@@ -18,8 +18,10 @@
 		})
 	}
 
-	for(const roster of rosters) {
-		divisions[roster.settings.division ? roster.settings.division - 1 : 0].rosters.push(roster);
+	for(const rosterID in rosters) {
+        const roster = rosters[rosterID];
+        const division = !roster.settings.division || roster.settings.division > numDivisions ? 0 : roster.settings.division - 1;
+		divisions[division].rosters.push(roster);
 	}
 
 	let expanded = false;
