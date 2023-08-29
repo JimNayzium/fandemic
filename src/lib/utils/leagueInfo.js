@@ -17,21 +17,21 @@ export const leagueID = "1000787989668696064";
 ////////////////////////////////
 const league_user_ids = [
   {
-    user_id: 482350633177837568 ,
+    user_id: 482350633177837568,
     name: "JimNayzium"
   },
   {
-    user_id: 844644401824231424 ,
+    user_id: 844644401824231424,
     name: "Maxbosley",
 
   },
   {
-    user_id: 991035802056466432 ,
+    user_id: 991035802056466432,
     name: "Warriorlocke",
 
   },
   {
-    user_id: 992924368130867200 ,
+    user_id: 992924368130867200,
     name: "DommyBoi412",
 
   },
@@ -78,19 +78,19 @@ export async function fetchLeagueManagersMSS() {
     counter++;
     let manager_obj = {
       managerID: value.user_id,
-      roster   : counter,
-      name     : value.display_name,
-      location : "Blythewood, SC",
-      bio      : value.metadata.team_name,
-      photo    : `https://sleepercdn.com/avatars/thumbs/${value.avatar}`,
-      mode     : "Win Now",
-      rival    : {
+      roster: counter,
+      name: value.display_name,
+      location: "Blythewood, SC",
+      bio: value.metadata.team_name,
+      photo: `https://sleepercdn.com/avatars/thumbs/${value.avatar}`,
+      mode: "Win Now",
+      rival: {
         name: "Rival",
         link: 0,
         image: "/managers/rival.jpg",
       },
-      philosophy      : "Your fantasy team's philosophy",
-      tradingScale    : 10,
+      philosophy: "Your fantasy team's philosophy",
+      tradingScale: 10,
       preferredContact: "Text",
     };
     new_managers.push(manager_obj);
@@ -104,8 +104,6 @@ export const dues = 100; // (optional) used in template constitution page
 export const dynasty = false; // true for dynasty leagues, false for redraft and keeper
 export const enableBlog = false; // requires VITE_CONTENTFUL_ACCESS_TOKEN and VITE_CONTENTFUL_SPACE environment variables
 
-export const managers = await fetchLeagueManagersMSS();
-
 /*   STEP 2   */
 export const homepageText = `
   <p>Founded in 2020 during the Covid-19 Pandemic, FANDEMIC is the home league of Marty Simpson. It consists of Marty's former students while a teacher and coach at a high school in Columbia, South Carolina, as well as some of Marty's close stand-up comedian friends. The signature of the Fandemic Fantasy Football league is the roster requirements on a weekly basis.</p>
@@ -118,6 +116,175 @@ export const homepageText = `
     <li>The playoffs are a one of a kind Royal Rumble style where a group makes each round and the top scores from each round advance! (versus head to head match-ups.)</li></ul>`;
 
 
+
+//# pull this from the browser window by going to IFF link and looking in the file IFF_Manger_Roster.svelte
+//#    // export const managers = await fetchLeagueManagersMSS();
+export const managers = [
+  {
+    "managerID": "482350633177837568",
+    "roster": 1,
+    "name": "JimNayzium",
+    "location": "Blythewood, SC",
+    "bio": "Brees Nuts",
+    "photo": "https://sleepercdn.com/avatars/thumbs/d8db99cf6b5397bccf29cfb91e40c320",
+    "mode": "Win Now",
+    "rival": {
+      "name": "Rival",
+      "link": 0,
+      "image": "/managers/rival.jpg"
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 10,
+    "preferredContact": "Text"
+  },
+  {
+    "managerID": "844644401824231424",
+    "roster": 2,
+    "name": "Maxbosley",
+    "location": "Blythewood, SC",
+    "photo": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c",
+    "mode": "Win Now",
+    "rival": {
+      "name": "Rival",
+      "link": 0,
+      "image": "/managers/rival.jpg"
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 10,
+    "preferredContact": "Text"
+  },
+  {
+    "managerID": "991035802056466432",
+    "roster": 3,
+    "name": "Warriorlocke",
+    "location": "Blythewood, SC",
+    "bio": "Olave Garden",
+    "photo": "https://sleepercdn.com/avatars/thumbs/c29deb12ec2084114e3e7332bb06d587",
+    "mode": "Win Now",
+    "rival": {
+      "name": "Rival",
+      "link": 0,
+      "image": "/managers/rival.jpg"
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 10,
+    "preferredContact": "Text"
+  },
+  {
+    "managerID": "992924368130867200",
+    "roster": 4,
+    "name": "DommyBoi412",
+    "location": "Blythewood, SC",
+    "photo": "https://sleepercdn.com/avatars/thumbs/8eb8f8bf999945d523f2c4033f70473e",
+    "mode": "Win Now",
+    "rival": {
+      "name": "Rival",
+      "link": 0,
+      "image": "/managers/rival.jpg"
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 10,
+    "preferredContact": "Text"
+  },
+  {
+    "managerID": "1000787150196457472",
+    "roster": 5,
+    "name": "brandonhenry",
+    "location": "Blythewood, SC",
+    "photo": "https://sleepercdn.com/avatars/thumbs/f0edbf4278f53f9425db175073df6584",
+    "mode": "Win Now",
+    "rival": {
+      "name": "Rival",
+      "link": 0,
+      "image": "/managers/rival.jpg"
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 10,
+    "preferredContact": "Text"
+  },
+  {
+    "managerID": "1000839713948770304",
+    "roster": 6,
+    "name": "kingDavid16",
+    "location": "Blythewood, SC",
+    "photo": "https://sleepercdn.com/avatars/thumbs/ef8b86ba7d311bd301e0b4e27d7a4054",
+    "mode": "Win Now",
+    "rival": {
+      "name": "Rival",
+      "link": 0,
+      "image": "/managers/rival.jpg"
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 10,
+    "preferredContact": "Text"
+  },
+  {
+    "managerID": "1000905284367319040",
+    "roster": 7,
+    "name": "SMT7",
+    "location": "Blythewood, SC",
+    "photo": "https://sleepercdn.com/avatars/thumbs/82aec8e811b839b8ec25d7b458afd57b",
+    "mode": "Win Now",
+    "rival": {
+      "name": "Rival",
+      "link": 0,
+      "image": "/managers/rival.jpg"
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 10,
+    "preferredContact": "Text"
+  },
+  {
+    "managerID": "1000905318622105600",
+    "roster": 8,
+    "name": "Willready31",
+    "location": "Blythewood, SC",
+    "bio": "Cookin’ with Kelce",
+    "photo": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909",
+    "mode": "Win Now",
+    "rival": {
+      "name": "Rival",
+      "link": 0,
+      "image": "/managers/rival.jpg"
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 10,
+    "preferredContact": "Text"
+  },
+  {
+    "managerID": "1000919564785389568",
+    "roster": 9,
+    "name": "AveMcG",
+    "location": "Blythewood, SC",
+    "bio": "Bijan & the Bolts",
+    "photo": "https://sleepercdn.com/avatars/thumbs/b319fdf8b7b5b0359d3c78622ba4d70c",
+    "mode": "Win Now",
+    "rival": {
+      "name": "Rival",
+      "link": 0,
+      "image": "/managers/rival.jpg"
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 10,
+    "preferredContact": "Text"
+  },
+  {
+    "managerID": "1000921514327326720",
+    "roster": 10,
+    "name": "McToots",
+    "location": "Blythewood, SC",
+    "photo": "https://sleepercdn.com/avatars/thumbs/4f4090e5e9c3941414db40a871e3e909",
+    "mode": "Win Now",
+    "rival": {
+      "name": "Rival",
+      "link": 0,
+      "image": "/managers/rival.jpg"
+    },
+    "philosophy": "Your fantasy team's philosophy",
+    "tradingScale": 10,
+    "preferredContact": "Text"
+  }
+];
 
 // export const managers = [
 //   {

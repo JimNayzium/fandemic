@@ -7,7 +7,11 @@ import { getRosterIDFromManagerID, buildRecord, createIFFRosterSpots } from '$li
 
 export let roster, leagueTeamManagers, startersAndReserve, players, rosterPositions, division, expanded;
 
-console.log("FROM SLEEPER/ROSTER: ", roster);
+// import { managers } from '$lib/utils/leagueInfo';
+// console.log("managers---marty:" , JSON.stringify(managers)); 
+
+
+// console.log("FROM SLEEPER/ROSTER: ", roster);
 
 $: team = leagueTeamManagers.teamManagersMap[leagueTeamManagers.currentSeason][roster.roster_id].team;
 

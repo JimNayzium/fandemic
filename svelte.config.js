@@ -6,7 +6,16 @@ const dockerBuild = process.env.DOCKER_BUILD
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {
+  // onwarn: (warning, handler) => {
+  //   if (warning.code === 'a11y-click-events-have-key-events') return
+  //   handler(warning)
+  // },
+  onwarn: (warning, handler) => {
+    if (warning.code.startsWith('a11y-')) return
+    handler(warning)
+  },
+
+  kit: {
     // adapter: dockerBuild ? node() : vercel(),
     adapter: node(),
   },
@@ -18,8 +27,5 @@ const config = {
   // }),
 
 };
-
-
-
 
 export default config;

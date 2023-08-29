@@ -9,8 +9,9 @@ import { goto } from '$app/navigation';
 import ManagerFantasyInfo from './ManagerFantasyInfo.svelte';
 import ManagerAwards from './ManagerAwards.svelte';
 
-import { managers } from '$lib/utils/leagueInfo';
 
+import { managers } from '$lib/utils/leagueInfo';
+// console.log("managers---marty:" , JSON.stringify(managers)); 
 
 
 import { onMount } from 'svelte';
@@ -18,7 +19,7 @@ import { getDatesActive, getRosterIDFromManagerID, getTeamNameFromTeamManagers }
 
 export let manager, managers, rostersData, leagueTeamManagers, rosterPositions, transactionsData, awards, records;
 
-console.log('on_manager_rosterData: ', rostersData);
+// console.log('on_manager_rosterData: ', rostersData);
 
 let transactions = transactionsData.transactions;
 
