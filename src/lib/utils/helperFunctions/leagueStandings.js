@@ -39,7 +39,7 @@ export const getLeagueStandings = async () => {
             ties: roster.settings.ties,
             fpts: round(roster.settings.fpts + (roster.settings.fpts_decimal / 100)),
             fptsAgainst: round(roster.settings.fpts_against + (roster.settings.fpts_against_decimal / 100)),
-            streak: roster.metadata.streak,
+            streak: roster.metadata.streak === null ? 0 : roster.metadata.streak,
             divisionWins: divisions ? 0 : null,
             divisionLosses: divisions ? 0 : null,
             divisionTies: divisions ? 0 : null,

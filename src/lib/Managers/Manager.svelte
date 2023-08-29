@@ -1,14 +1,14 @@
 <script>
-    import Button, { Group, Label } from '@smui/button';
-	import LinearProgress from '@smui/linear-progress';
-    import {loadPlayers, getLeagueTransactions} from '$lib/utils/helper';
-	import Roster from '../Rosters/Roster.svelte';
-	import TransactionsPage from '../Transactions/TransactionsPage.svelte';
-    import { goto } from '$app/navigation';
-    import ManagerFantasyInfo from './ManagerFantasyInfo.svelte';
-    import ManagerAwards from './ManagerAwards.svelte';
-    import { onMount } from 'svelte';
-	import { getDatesActive, getRosterIDFromManagerID, getTeamNameFromTeamManagers } from '$lib/utils/helperFunctions/universalFunctions';
+  import Button, { Group, Label } from '@smui/button';
+  import LinearProgress from '@smui/linear-progress';
+  import { loadPlayers, getLeagueTransactions } from '$lib/utils/helper';
+  import Roster from '../Rosters/Roster.svelte';
+  import TransactionsPage from '../Transactions/TransactionsPage.svelte';
+  import { goto } from '$app/navigation';
+  import ManagerFantasyInfo from './ManagerFantasyInfo.svelte';
+  import ManagerAwards from './ManagerAwards.svelte';
+  import { onMount } from 'svelte';
+  import { getDatesActive, getRosterIDFromManagerID, getTeamNameFromTeamManagers } from '$lib/utils/helperFunctions/universalFunctions';
 
     export let manager, managers, rostersData, leagueTeamManagers, rosterPositions, transactionsData, awards, records;
 
@@ -60,6 +60,9 @@
 
         goto(`/manager?manager=${manager}`, {noscroll})
     }
+
+
+
 </script>
 
 <style>
@@ -222,7 +225,12 @@
 
 <div class="managerContainer">
     <div class="managerConstrained">
+      {#if viewManager.php}  
         <img class="managerPhoto" src="{viewManager.photo}" alt="manager"/>
+      {:else}
+        <div class="alert alert-info p-2">Not IFF: Custom Photos Can Be Here</div>
+      {/if}
+
         <h2>
             {viewManager.name}
             <div class="teamSub">{coOwners ? 'Co-' : ''}Manager of <i>{getTeamNameFromTeamManagers(leagueTeamManagers, rosterID, year)}</i></div>

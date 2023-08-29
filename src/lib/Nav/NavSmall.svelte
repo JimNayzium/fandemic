@@ -59,9 +59,9 @@
 	}
 </style>
 
-<Icon class="material-icons menuIcon" on:click={() => (open = true)}>menu</Icon>
+<Icon class="material-icons menuIcon" on:click={() => (open = true)} on:keypress={() => (open = true)}>menu</Icon>
 
-<div class="nav-back" style="pointer-events: {open ? "visible" : "none"}; opacity: {open ? 1 : 0};" on:click={() => (open = false)}/>
+<div class="nav-back" style="pointer-events: {open ? "visible" : "none"}; opacity: {open ? 1 : 0};" on:click={() => (open = false)} on:keydown={() => (open = false)}/>
 
 <Drawer variant="modal" class="nav-drawer" fixed={true} bind:open>
 	<Header>
@@ -71,7 +71,7 @@
 		<List>
 			{#each tabs as tab}
 				{#if !tab.nest && (tab.label != 'Blog' || (tab.label == 'Blog' && enableBlog))}
-					<Item href="javascript:void(0)" on:click={() => selectTab(tab)} on:touchstart={() => preloadData(tab.dest)} on:mouseover={() => preloadData(tab.dest)} activated={active == tab.dest} >
+					<Item href="javascript:void(0)" on:click={() => selectTab(tab)} on:keypress={() => selectTab(tab)} on:touchstart={() => preloadData(tab.dest)} on:mouseover={() => preloadData(tab.dest)} activated={active == tab.dest} >
 						<Graphic class="material-icons{active == tab.dest ? "" : " nav-item"}" aria-hidden="true">{tab.icon}</Graphic>
 						<Text class="{active == tab.dest ? "" : "nav-item"}">{tab.label}</Text>
 					</Item>

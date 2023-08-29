@@ -10,19 +10,20 @@
 <style>
 	.playerAvatar {
 		vertical-align: middle;
-		height: 45px;
-		width: 45px;
+		height: 60px;
+		width: 90px;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: auto 45px;
+		background-size: auto 90px;
 	}
 	.pos {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
 		border-radius: 8px;
-		width: 46px;
-		height: 32px;
+		width: 60px;
+		height: 45px;
+    font-weight:bold;
 	}
 
 	.QB {

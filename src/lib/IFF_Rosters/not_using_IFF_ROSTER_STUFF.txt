@@ -1,0 +1,25 @@
+
+// let finalized_IFF_roster = [];
+// const finalizeIFFRoster = (starters, bench, IR) => {
+//   const slotCounts = {};
+//   digestedRoster.forEach(player => {
+//     const { name, poss, slot, id } = player;
+//     // Determine the key to populate in IFF_rosterPositions
+//     let keyToPopulate;
+//     if (slot === "FLEX" || slot === "SUPER_FLEX") {
+//       slotCounts[slot] = (slotCounts[slot] || 0) + 1;
+//       keyToPopulate = `${slot}_${slotCounts[slot]}`;
+//     } else {
+//       keyToPopulate = `${slot}_1`;
+//       if (IFF_rosterPositions[keyToPopulate] !== null) {
+//         slotCounts[slot] = (slotCounts[slot] || 1) + 1;
+//         keyToPopulate = `${poss}_${slotCounts[slot]}`;
+//       }
+//     }
+//     // Assign the player to the key if it's not populated
+//     if (IFF_rosterPositions[keyToPopulate] === null) {
+//       IFF_rosterPositions[keyToPopulate] = { name: name, id: id};
+//     }
+//   });
+// };
+
