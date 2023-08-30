@@ -1,6 +1,6 @@
 <!-- __layout.svelte -->
 <script>
-	import { Nav, Footer } from "$lib/components"
+	import { Nav, Footer } from "$lib/components";
 </script>
 
 <main>
@@ -10,3 +10,4 @@
 
     <Footer /> <!-- adds the footer -->
 </main>
+

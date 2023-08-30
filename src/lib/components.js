@@ -17,23 +17,29 @@ import HomePost from './BlogPosts/HomePost.svelte';
 import Posts from './BlogPosts/Posts.svelte';
 import Standings from './Standings/index.svelte';
 
+import IFF_Rosters from './IFF_Rosters/IFF_Rosters.svelte';
+import IFF_Manager from './IFF_Rosters/IFF_Manager.svelte';
+
 export {
-    Nav,
-    Footer,
-    Awards,
-    Rosters,
-    Transactions,
-    TransactionsPage,
-    News,
-    Resources,
-    MatchupsAndBrackets,
-    Pagination,
-    Drafts,
-    Records,
-    Manager,
-    AllManagers,
-    PowerRankings,
-    HomePost,
-    Posts,
-    Standings,
+  Nav,
+  Footer,
+  Awards,
+  Rosters,
+  Transactions,
+  TransactionsPage,
+  News,
+  Resources,
+  MatchupsAndBrackets,
+  Pagination,
+  Drafts,
+  Records,
+  Manager,
+  AllManagers,
+  PowerRankings,
+  HomePost,
+  Posts,
+  Standings,
+    
+  IFF_Rosters,
+  IFF_Manager
 };

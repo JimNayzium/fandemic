@@ -6,7 +6,6 @@
 
 	export let data;
 	const {managers, leagueTeamManagersData} = data;
-
     onMount(() => {
         if(!managers.length) {
             goto('/');

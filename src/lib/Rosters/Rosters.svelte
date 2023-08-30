@@ -14,6 +14,8 @@
 	if(playersInfo.stale) {
 		refreshPlayers();
 	}
+
+  console.log('rosterData: ', rosterData);
 </script>
 
 <style>

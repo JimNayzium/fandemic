@@ -458,7 +458,7 @@
 </style>
 
 <div class="matchup">
-    <div class="header" on:click={() => expandClose()} bind:this={el} >
+    <div class="header" on:click={() => expandClose()} on:keypress={() => expandClose()} bind:this={el} >
         <div class="opponent home{winning == "home" ? " homeGlow" : ""}">
             <img class="avatar" src={home.manager.avatar} alt="home team avatar" />
             <div class="name">{home.manager.name}</div>
@@ -523,7 +523,7 @@
             </div>
         {/each}
         {#if !expandOverride}
-            <div class="close" on:click={() => expandClose()}>Close Matchup</div>
+            <div class="close" on:click={() => expandClose()} on:keypress={() => expandClose()}>Close Matchup</div>
         {/if}
     </div>
 </div>
