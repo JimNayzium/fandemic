@@ -2,20 +2,21 @@
     import { parseDate, getAuthor, getAvatar, generateParagraph } from "$lib/utils/helper";
     import { onMount } from "svelte";
     import { fly } from "svelte/transition";
-    import Comments from "./Comments.svelte";
+    // import Comments from "./Comments.svelte";
 
-    export let leagueTeamManagers, post, createdAt, id = null, direction = 1, home = false;
+    export let leagueTeamManagers, post, createdAt, id = null, direction = 1;
+    export const home = false;
 
-    let loadingComments = true;
+    // let loadingComments = true;
     let total, comments;
 
     onMount(async()=> {
-        const res = await fetch(`/api/getBlogComments/${id}`, {compress: true});
-        const commentsData = await res.json();
+        // const res = await fetch(`/api/getBlogComments/${id}`, {compress: true});
+        // const commentsData = await res.json();
 
-        total = commentsData.total;
-        comments = [...commentsData.items].sort((a, b) => Date.parse(a.sys.createdAt) - Date.parse(b.sys.createdAt));
-        loadingComments = false;
+        // total = commentsData.total;
+        // comments = [...commentsData.items].sort((a, b) => Date.parse(a.sys.createdAt) - Date.parse(b.sys.createdAt));
+        // loadingComments = false;
     });
 
     let safePost = false;
@@ -183,10 +184,10 @@
 		border: 0.25px solid #777;
 	}
 
-    .commentDivider {
+    /* .commentDivider {
         margin: 1em 0 0;
 
-    }
+    } */
 
     .authorAndDate {
         color: var(--g999);
@@ -205,7 +206,7 @@
 -->
 {#if safePost}
     {#key id}
-        <div in:fly={{delay: duration, duration: duration, x: 150 * direction}} out:fly={{delay: 0, duration: duration, x: -150 * direction}} class="post">
+        <div in:fly={{delay: duration, duration: duration, x: 150 * direction}} out:fly={{delay: 0, duration: duration, x: -150 * direction}} class="post p-3">
             <h3>{title}</h3>
 
             <div class="body">
@@ -216,7 +217,7 @@
 
             <hr class="divider" />
 
-            <div class="authorAndDate">
+            <div class="authorAndDate p-3">
                 <a href="/blog?filter={type}&page=1">{type}</a>
                 <img alt="author avatar" class="teamAvatar" src="{getAvatar(leagueTeamManagers, author)}" />
                 <span class="author">{@html getAuthor(leagueTeamManagers, author)} - </span>
@@ -224,10 +225,10 @@
             </div>
 
             <!-- display comments -->
-            {#if !loadingComments && !home}
+            <!-- {#if !loadingComments && !home}
                 <hr class="divider commentDivider" />
                 <Comments {leagueTeamManagers} {comments} {total} postID={id} />
-            {/if}
+            {/if} -->
 
         </div>
     {/key}

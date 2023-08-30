@@ -67,7 +67,8 @@
             }
             return {
                 name,
-                avatar: player.pos == "DEF" ? `background-image: url(https://sleepercdn.com/images/team_logos/nfl/${starter.toLowerCase()}.png)` : `background-image: url(https://sleepercdn.com/content/nfl/players/thumb/${starter}.jpg), url(https://sleepercdn.com/images/v2/icons/player_default.webp)`,
+                // avatar: player.pos == "DEF" ? `background-image: url(https://sleepercdn.com/images/team_logos/nfl/${starter.toLowerCase()}.png)` : `background-image: url(https://sleepercdn.com/content/nfl/players/thumb/${starter}.jpg), url(https://sleepercdn.com/images/v2/icons/player_default.webp)`,
+                avatar: player.pos == "DEF" ? `background-image: url(https://sleepercdn.com/images/team_logos/nfl/${starter.toLowerCase()}.png)` : `background-image: url(https://sleepercdn.com/content/nfl/players/thumb/${starter}.jpg)`,
                 pos: player.pos,
                 team: player.t,
                 opponent: player.wi && player.wi[displayWeek] ? player.wi[displayWeek].o : null,
@@ -190,29 +191,11 @@
 	.avatar {
 		vertical-align: middle;
 		border-radius: 50%;
-		height: 35px;
-		width: 35px;
+		height: 60px;
+		width: 60px;
 		margin: 0;
 		border: 0.25px solid #777;
         background-color: #eee;
-	}
-
-	.playerAvatar {
-		vertical-align: middle;
-		height: 45px;
-		width: 45px;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: auto 45px;
-	}
-	.pos {
-		display: inline-flex;
-		align-items: center;
-		justify-content: center;
-		border-radius: 8px;
-        max-width: 32px;
-        min-width: 32px;
-		height: 32px;
 	}
 
 	.QB {
@@ -247,21 +230,40 @@
 		background-color: var(--DEF);
 	}
 
-    .DL, .DE, .DT {
-        background-color: var(--DL);
-    }
+  .DL, .DE, .DT {
+      background-color: var(--DL);
+  }
 
-    .LB {
-        background-color: var(--LB);
-    }
+  .LB {
+      background-color: var(--LB);
+  }
 
-    .DB, .CB, .SS, .FS {
-        background-color: var(--DB);
-    }
+  .DB, .CB, .SS, .FS {
+      background-color: var(--DB);
+  }
 
-    .IDP {
-        background: linear-gradient(to right, var(--DL), var(--DL) 33.33%, var(--LB) 33.33%, var(--LB) 66.66%, var(--DB) 66.66%);
-    }
+  .IDP {
+      background: linear-gradient(to right, var(--DL), var(--DL) 33.33%, var(--LB) 33.33%, var(--LB) 66.66%, var(--DB) 66.66%);
+  }
+  .playerAvatar {
+		vertical-align: middle;
+		height: 60px;
+		width: 90px;
+    /* border-radius: 50%; */
+    /* border: 1px solid #FFFFFF; */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: auto 60px;
+	}
+	.pos {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 8px;
+        max-width: 32px;
+        min-width: 32px;
+		height: 32px;
+	}
 
     .rosters {
         position: relative;
@@ -271,7 +273,7 @@
         border-left: 1px solid #bbb;
         border-right: 1px solid #bbb;
         border-bottom: 1px solid #bbb;
-		transition: max-height 0.4s;
+		  transition: max-height 0.4s;
     }
 
     .line {
@@ -316,10 +318,11 @@
 
     .playerTeam {
         display: inline-block;
-        color: #888;
-        font-style: italic;
+        color: #DEDEDE;
+        font-weight: bold;
+        /* font-style: italic; */
         text-align: center;
-        font-size: 0.5em;
+        font-size: 0.6em;
     }
 
     .playerName {

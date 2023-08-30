@@ -60,7 +60,7 @@
 		display: none;
 	}
 
-	.container {
+	.container-not-bootstrap {
 		position: absolute;
 		top: 0.25em;
 		right: 0.25em;
@@ -82,15 +82,10 @@
 </style>
 
 <nav>
-	<a href="/"><img id="logo" alt="league logo" src="/badge.png" /></a>
+	<a href="/"><img id="logo" alt="league logo" style="max-width:150px; width:100%; height: auto;" src="/fandemic-2023-24.png" /></a>
 
-	<div class="container">
-		<IconButton
-			toggle
-			pressed={lightTheme}
-			on:MDCIconButtonToggle:change={switchTheme}
-			class="lightDark"
-		>
+	<div class="container-not-bootstrap">
+		<IconButton toggle pressed={lightTheme} on:MDCIconButtonToggle:change={switchTheme} class="lightDark">
 			<Icon class="material-icons" on>dark_mode</Icon>
 			<Icon class="material-icons">light_mode</Icon>
 		</IconButton>

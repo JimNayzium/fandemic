@@ -27,7 +27,7 @@
 
     .text {
         padding: 0 30px;
-        max-width: 620px;
+        /* max-width: 620px; */
         margin: 0 auto;
     }
 
@@ -138,7 +138,7 @@
 
 <div id="home">
     <div id="main">
-        <div class="text">
+        <div class="text m-auto w-100 px-5 mx-3 mb-5">
             <h6>{leagueName}</h6>
             <!-- homepageText contains the intro text for your league, this gets edited in /src/lib/utils/leagueInfo.js -->
             {@html homepageText }
