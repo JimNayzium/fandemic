@@ -16,8 +16,8 @@ const config = {
   },
 
   kit: {
-    // adapter: dockerBuild ? node() : vercel(),
-    adapter: node(),
+    adapter: dockerBuild ? node() : vercel(),
+    // adapter: node(),
   },
   // preprocess: preprocess({
   //   scss: {
