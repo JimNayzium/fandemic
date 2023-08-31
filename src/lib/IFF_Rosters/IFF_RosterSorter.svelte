@@ -58,10 +58,10 @@
 		background-position: right; 
 	}
 
-	.banner-D-3 {
+	/* .banner-D-3 {
 		background-image: url("/division-3-banner.png");
 		background-position: left; 
-	}
+	} */
 
 	h2 {
 		text-align: center;
